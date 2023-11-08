@@ -1,40 +1,763 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/custom.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<section data-background-color="white" data-background="images/bild.png" data-background-opacity="0.5"
+				data-auto-animate>
+				<h1>INTELLIGENT AGENTS</h1>
+			</section>
+			<section data-background-color="white" data-background="images/bild.png" data-background-opacity="0.5"
+				data-auto-animate>
+				<h1>INTELLIGENT AGENTS</h1>
+				<h2>CONCEPTS, MODELS, AND PROPERTIES</h2>
+			</section>
+
+			<section data-background-color="white" data-background="images/bild.png" data-background-opacity="0.2">
+
+				<section data-auto-animate>
+					<h2 data-id="agent_env_header" style="position: fixed; left: 10%;">Agents and Environments</h2>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="agent_env_header" style="opacity: 0.4; top: 0; position: fixed; left: 10%;">Agents and
+						Environments</h2>
+					<p>Definition of Agents</p>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="agent_env_header" style="opacity: 0.4; top: 0; position: fixed; left: 10%;">Agents and
+						Environments</h2>
+					<p class="grey">Definition of Agents</p>
+					<p>Agents that decide what to do by finding sequences of actions that lead to
+						desirable states</p>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="agent_env_header" style="opacity: 0.4; top: 0; position: fixed; left: 10%;">Agents and
+						Environments</h2>
+					<p class="grey">Definition of Agents</p>
+					<p class="grey">Agents that decide what to do by finding sequences of actions that lead to
+						desirable states</p>
+					<p>Definition of Environments</p>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="agent_env_header" style="opacity: 0.4; top: 0; position: fixed; left: 10%;">Agents and
+						Environments</h2>
+					<p class="grey">Definition of Agents</p>
+					<p class="grey">Agents that decide what to do by finding sequences of actions that lead to
+						desirable states</p>
+					<p class="grey">Definition of Environments</p>
+					<p>The external context or world where an agent operates</p>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="agent_env_header" style="opacity: 0.4; top: 0; position: fixed; left: 10%;">Agents and
+						Environments</h2>
+					<p class="grey">Definition of Agents</p>
+					<p class="grey">Agents that decide what to do by finding sequences of actions that lead to
+						desirable states</p>
+					<p class="grey">Definition of Environments</p>
+					<p class="grey">The external context or world where an agent operates</p>
+				</section>
+
+
+			</section>
+
+			<section data-background-color="white" data-background="images/bild.png" data-background-opacity="0.2">
+				<section data-auto-animate>
+					<h2 data-id="agent_env_header" style="opacity: 0.4; top: 0; position: fixed; left: 40%;">Agents</h2>
+					<h3>Components and Properties of an Agent</h3>
+					<ul style="font-size: 0.8em;">
+						<li class="fragment"><b>Sensors:</b> Devices or mechanisms that collect data from the
+							environment</li>
+						<li class="fragment"><b>Actuators:</b> Mechanisms that execute actions affecting the environment
+						</li>
+						<li class="fragment"><b>Processor:</b> The "brain" of the agent that processes the data from
+							sensors and decides actions via actuators</li>
+						<li class="fragment"><b>State:</b> The internal representation of what the agent currently knows
+							about the world</li>
+						<li class="fragment"><b>Goal: </b> The desirable states the agent aims to reach
+						</li>
+						<li class="fragment"><b>Strategy: </b> The plan or sequence of actions leading to the goal
+						</li>
+
+					</ul>
+				</section>
+
+				<section data-auto-animate>
+					<h2 data-id="agent_example_header" style="opacity: 0.4; top: 0; position: fixed; left: 40%;">Agents
+					</h2>
+					<h3>Example of an Agent: Autonomous Vehicle</h3>
+					<aside class="notes">
+						Låt oss tänka på ett självkörande fordon som en agent. Denna agent interagerar med den verkliga
+						världen och utnyttjar sina komponenter för att fungera på ett säkert och effektivt sätt.
+					</aside>
+					<ul style="font-size: 0.75em;">
+						<li class="fragment"><b>Sensors:</b> Cameras, LIDAR (laser imaging), and radar to perceive
+							vehicles,
+							pedestrians, and road signs.</li>
+						<li class="fragment"><b>Actuators:</b> Electric motors to control wheels, brakes, and steering.
+						</li>
+						<li class="fragment"><b>Processor:</b> Onboard computers and algorithms process sensor data to
+							make driving decisions.</li>
+						<li class="fragment"><b>State:</b> A dynamic model of the vehicle's current position, speed, and
+							surroundings.</li>
+						<li class="fragment"><b>Goal:</b> To reach a destination safely while following traffic rules.
+						</li>
+						<li class="fragment"><b>Strategy:</b> Route planning, obstacle avoidance, and speed control
+							algorithms.</li>
+					</ul>
+					<aside class="notes">
+						Fordonets sensorer samlar in data om omgivningen, vilket processorn använder för att uppdatera
+						fordonets tillstånd och fatta beslut om åtgärder via aktuatorerna. Fordonets mål, som att nå en
+						destination eller undvika kollisioner, styr dessa beslut, och strategin innefattar en sekvens av
+						körmanövrar för att uppnå dessa mål.
+					</aside>
+				</section>
+
+
+				<section data-auto-animate>
+					<h2 data-id="agent_env_header" style="opacity: 0.4; top: 0; position: fixed; left: 40%;">Agents</h2>
+					<h3>Sensors - examples</h3>
+
+					<ul style="font-size: 0.875em;">
+						<li class="fragment"><b>Camera:</b> Captures visual data from the environment</li>
+						<li class="fragment"><b>Microphone:</b> Picks up auditory signals</li>
+						<li class="fragment"><b>GPS:</b> Provides location data</li>
+						<li class="fragment"><b>Keyboard Listeners:</b> Records keystrokes to understand user input</li>
+						<li class="fragment"><b>Text Parser: </b> Reads and interprets text data, such as in a chatbot
+						</li>
+
+					</ul>
+				</section>
+
+				<section data-auto-animate>
+					<h2 data-id="agent_env_header" style="opacity: 0.4; top: 0; position: fixed; left: 40%;">Agents</h2>
+					<h3>Actuators - examples</h3>
+
+					<ul style="font-size: 0.875em;">
+						<li class="fragment"><b>Speaker:</b> Outputs auditory signals or speech</li>
+						<li class="fragment"><b>Display Screen:</b> Renders visual data or interfaces</li>
+						<li class="fragment"><b>Robot Arm:</b> Performs physical movements or manipulations</li>
+						<li class="fragment"><b>API Calls:</b> Makes requests to other services or databases</li>
+						<li class="fragment"><b>Game Engine:</b> Updates game states or visuals</li>
+						<li class="fragment"><b>Database Updater:</b> Writes or updates records in a database</li>
+					</ul>
+				</section>
+
+				<section data-auto-animate>
+					<h2 data-id="agent_env_header" style="opacity: 0.4; top: 0; position: fixed; left: 40%;">Agents</h2>
+					<h3>State - details</h3>
+
+					<ul style="font-size: 0.875em;">
+						<li class="fragment"><b>Snapshot:</b>The current condition of the agent and its environment
+						</li>
+						<li class="fragment"><b>Data Collection:</b> Through sensors or other sources of information
+						</li>
+						<li class="fragment"><b>Variables:</b> E.g. position, speed, or other quantifiable attributes
+						</li>
+						<li class="fragment"><b>Dynamic Nature:</b> Changes over time in response to actions or external
+							events</li>
+						<li class="fragment"><b>Internal & External:</b> Pertaining to the agent's own status or mental
+							state or pertaining to the status of the environment</li>
+					</ul>
+				</section>
+
+				<section data-auto-animate>
+					<h2 data-id="agent_env_header" style="opacity: 0.4; top: 0; position: fixed; left: 40%;">Agents</h2>
+					<h3>Goals - details</h3>
+
+					<ul style="font-size: 0.875em;">
+						<li class="fragment"><b>End States:</b> Desired outcomes or conditions to be achieved</li>
+						<li class="fragment"><b>Metrics:</b> Quantifiable criteria to measure the success or failure of
+							actions</li>
+						<li class="fragment"><b>Planning:</b> The roadmap for the agent to achieve its goals</li>
+						<li class="fragment"><b>Constraints:</b> Limits or rules that shape the paths to goals</li>
+						<li class="fragment"><b>Dynamic:</b> May change over time based on agent learning or
+							environmental changes</li>
+					</ul>
+				</section>
+
+				<section data-auto-animate>
+					<h2 data-id="agent_env_header" style="opacity: 0.4; top: 0; position: fixed; left: 40%;">Agents</h2>
+					<h3>Rationality</h3>
+					<aside class="notes">
+						Belys skillnaden mellan rationalitet och perfektion. En rationell agent är inte nödvändigtvis
+						perfekt, men agerar på bästa möjliga sätt med hänsyn till vad den vet och vad den kan göra.
+						Rationalitet handlar om att ta det bästa beslutet baserat på tillgänglig information och möjliga
+						åtgärder - inte nödvändigtvis att ha rätt eller vara perfekt. Tänk på hur du instinktivt bedömer
+						risken när du går över vägen; det är en form av rationellt beteende anpassat efter situationen.
+						<br><br>
+						För Optimalt Beslut: Diskutera hur en rationell agent kan väga olika alternativ mot varandra.
+						Agenten kanske inte väljer den säkraste vägen, utan den som ger bäst balans mellan risk och
+						belöning utifrån dess mål.
+						<br><br>
+						För Beslutsgrund: Betona vikten av att agera med omdöme snarare än att förlita sig på fasta
+						regler. En rationell agent anpassar sitt beteende efter nya omständigheter och information,
+						vilket kan innebära att revidera tidigare planer.
+						<br><br>
+						För Prestationsmått: Förklara att ett prestationsmått är subjektivt och varierar mellan olika
+						agenter. Prestationsmåttet hjälper agenten att kvantifiera framgång och är grundläggande för att
+						kunna bedöma rationella beslut.
+						<br><br>
+						För Begränsad Rationalitet: Diskutera hur verkliga begränsningar, som processorkraft och tid,
+						påverkar beslutsfattandet. Ibland är det bästa agenten kan göra att hitta en tillräckligt bra
+						lösning snarare än den optimala.
+						<br><br>
+						För Rationell Agentmodell: Påpeka att detta är en idealiserad modell och att verkliga agenter
+						kan behöva kompromissa mellan ideal och praktiska begränsningar.
+					</aside>
+					<p style="font-size: 0.7em;">
+						Rationality refers to the quality of an agent's actions being aligned with its goals based on
+						its beliefs and knowledge, given its perceptions.
+					</p>
+
+					<ul style="font-size: 0.75em;">
+						<li class="fragment"><b>Optimal Decision:</b> A rational agent aims for the highest expected
+							utility.</li>
+						<li class="fragment"><b>Decision Basis:</b> Rationality involves decision-making with available
+							information.</li>
+						<li class="fragment"><b>Performance Measure:</b> Rational agents strive to meet their
+							performance metrics.</li>
+						<li class="fragment"><b>Bounded Rationality:</b> Practical limits lead to satisfactory, not
+							always optimal, outcomes.</li>
+						<li class="fragment"><b>Agent Model:</b> Assumes agents maximize expected utility.</li>
+					</ul>
+				</section>
+
+
+
+				<section data-auto-animate>
+					<h2 data-id="agent_example_header" style="opacity: 0.4; top: 0; position: fixed; left: 40%;">Agents
+					</h2>
+					<h3>Your turn: Home Robot</h3>
+
+					<ul style="font-size: 0.75em;">
+						<li class="fragment"><b>Sensors:</b><span class="fragment fade-in-then-semi-out"> Touch sensors,
+								cameras, and microphones to navigate and interact within a home environment.</span></li>
+						<li class="fragment"><b>Actuators:</b><span class="fragment fade-in-then-semi-out"> Motors to
+								move around, arms to grab or manipulate objects, and speakers to provide
+								feedback.</span></li>
+						<li class="fragment"><b>Processor:</b><span class="fragment fade-in-then-semi-out"> Internal
+								computer to process data and execute tasks such as cleaning, fetching items, or
+								providing assistance.</span></li>
+						<li class="fragment"><b>State:</b><span class="fragment fade-in-then-semi-out"> Current
+								knowledge of the home layout, residents of the household, location of objects, and the
+								tasks it needs to complete.</span></li>
+						<li class="fragment"><b>Goal:</b><span class="fragment fade-in-then-semi-out"> To assist in
+								household tasks, ensure the home is clean, and provide convenience to the
+								occupants.</span></li>
+						<li class="fragment"><b>Strategy:</b><span class="fragment fade-in-then-semi-out"> Pathfinding
+								algorithms, object recognition, and task prioritization to effectively assist in the
+								home.</span></li>
+					</ul>
+
+				</section>
+
+			</section>
+
+
+			<section data-background-color="white" data-background="images/bild3.png" data-background-opacity="0.2">
+
+				<section data-auto-animate>
+					<h2 data-id="agent_env_header" style="opacity: 0.4; top: 0; position: fixed; left: 30%;">
+						Environments</h2>
+					<h3>Characteristics of an Environment</h3>
+					<ul style="font-size: 0.875em;">
+						<aside class="notes">
+							Observable vs Unobservable
+
+							Här handlar det om ifall en agent kan se allt den behöver för att fatta beslut. I en
+							observabel
+							miljö ser agenten allt den behöver. I en oobservabel miljö måste den gissa eller dra
+							slutsatser
+							baserat på begränsad information.
+							<br><br>
+							Deterministic vs Stochastic
+
+							I en deterministisk miljö kan agenten förutse exakt vad som kommer att hända när den utför
+							en viss
+							handling. I en stokastisk miljö är det lite av en chansfaktor involverad.
+							<br><br>
+							Static vs Dynamic
+
+							Om miljön är statisk förändras den inte medan agenten funderar på sitt nästa drag. I en
+							dynamisk
+							miljö kan saker förändras medan agenten tänker, vilket gör det hela lite mer komplicerat.
+							<br><br>
+							Discrete vs Continuous
+
+							I en diskret miljö har vi klart avgränsade stater och tidsintervall. I en kontinuerlig miljö
+							är
+							allt, inklusive tid och rum, i en kontinuerlig flöde.
+							<br><br>
+							Single-agent vs Multi-agent
+
+							Handlar det om en ensam agent som agerar i miljön eller finns det flera? Om det är flera,
+							måste de
+							samarbeta eller konkurrera?
+							<br><br>
+							Collaborative vs Competitive
+
+							Om det finns flera agenter, jobbar de tillsammans för att nå ett gemensamt mål eller jobbar
+							de emot
+							varandra? Det kan vara samarbete som i ett fotbollslag eller konkurrens som i en auktion.
+							<br><br>
+							Episodic vs Sequential
+
+							I en episodisk miljö är varje beslut isolerat från det andra. Varje val påverkar inte
+							framtida val.
+							I en sekventiell miljö har däremot varje val konsekvenser för framtiden.
+						</aside>
+						<li class="fragment"><b>Observable vs Unobservable</b></li>
+						<li class="fragment"><b>Deterministic vs Stochastic</b></li>
+						<li class="fragment"><b>Static vs Dynamic</b></li>
+						<li class="fragment"><b>Discrete vs Continuous</b></li>
+						<li class="fragment"><b>Single-agent vs Multi-agent</b></li>
+						<li class="fragment"><b>Collaborative vs Competitive</b></li>
+						<li class="fragment"><b>Episodic vs Sequential</b></li>
+					</ul>
+				</section>
+			</section>
+
+			<section data-background-color="white" data-background="images/bild2.png" data-background-opacity="0.2">
+				<section data-auto-animate>
+					<h2 data-id="pesd_header">PEAS Framework</h2>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="pesd_header" style="opacity: 0.4;">PEAS Framework</h2>
+					<h3>Understanding Agent Interactions</h3>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="pesd_header" style="opacity: 0.4;">PEAS Framework</h2>
+					<ul style="font-size: 0.875em;">
+						<aside class="notes">
+							PEAS står för Performance Measure, Environment, Actuators och Sensors.
+							Det här är en ram som hjälper oss att fullt ut förstå hur en agent fungerar
+							och interagerar med sin omgivning. Vi börjar med att definiera vilka
+							prestandamått som är relevanta för agentens uppdrag. Därefter tittar
+							vi på miljön där agenten ska verka. Actuators är de mekanismer som utför handlingar,
+							och Sensors är de som samlar in data. Allt detta hjälper oss att
+							förstå både agenten och miljön bättre.
+						</aside>
+						<li class="fragment"><b>Performance Measure:</b> The quality of the agent's work</li>
+						<li class="fragment"><b>Environment:</b> Where the agent operates</li>
+						<li class="fragment"><b>Actuators:</b> The mechanisms that perform actions</li>
+						<li class="fragment"><b>Sensors:</b> The mechanisms that gather information</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>PEAS description - Automated Taxi Driver</h3>
+
+					<table class="peas table">
+						<thead>
+							<tr>
+								<th>PEAS Component</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Performance Measure</td>
+								<td>Safe and efficient route, customer satisfaction, compliance with traffic laws</td>
+							</tr>
+							<tr>
+								<td>Environment</td>
+								<td>Roads, traffic lights, pedestrians, other vehicles, customer pickup and drop-off
+									points</td>
+							</tr>
+							<tr>
+								<td>Actuators</td>
+								<td>Steering wheel, accelerator, brakes, signal lights, horn</td>
+							</tr>
+							<tr>
+								<td>Sensors</td>
+								<td>GPS, cameras, speedometer, odometer, traffic light sensors, collision sensors</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</section>
+
+				<section>
+					<h3>Examples of Task Environments</h3>
+					<aside class="notes">
+						I den här sliden går vi igenom olika typer av uppgiftsmiljöer och deras respektive attribut.
+						Dessa attribut hjälper oss att analysera och förstå komplexiteten i de olika scenarier där
+						intelligenta agenter verkar.
+						<br><br>
+						- **Taxi Driver**: Detta är en komplex miljö med flera agenter som inte är helt observerbar och
+						som är dynamisk.
+						<br>
+						- **Schack**: Här är allting helt observerbart, och miljön är statisk även om själva spelet är
+						episodiskt.
+						<br>
+						- **Aktiehandel**: Detta är en annan komplex miljö som involverar flera agenter. Den är dynamisk
+						och endast delvis observerbar på grund av marknadsvolatilitet.
+						<br>
+						- **Termostatstyrning**:
+						<br>
+						<b>Fully Observable:</b> Termostaten kan helt och hållet observera tillståndet som den behöver
+						kontrollera, vanligtvis temperaturen i ett rum eller en byggnad.
+						<br>
+						<b>Single Agent:</b> Termostaten är den enda agenten i sitt uppgiftsmiljö som agerar för att
+						påverka
+						temperaturen.
+						<br>
+						<b>Deterministic:</b> Om tillståndet i uppgiftsmiljön och agerandet av termostaten är kända, kan
+						nästa
+						tillstånd av miljön förutsägas med säkerhet (t.ex. om termostaten är inställd på att värma,
+						kommer temperaturen att öka).
+						<br>
+						<b>Episodic:</b> Termostatens beslut tas i episoder som inte är beroende av föregående episoder;
+						varje
+						beslutsprocess om att sätta på eller stänga av är oberoende av den tidigare.
+						<br>
+						<b>Static:</b> Uppgiftsmiljön ändras inte medan termostaten överväger sin handling (miljön är
+						statisk
+						eftersom den inte förändras medan en beslutsprocess pågår).
+						<br>
+						<b>Discrete:</b> De möjliga tillstånden och åtgärderna som termostaten kan ta är klart
+						definierade och
+						begränsade (t.ex., inställningstemperaturer är diskreta värden snarare än ett kontinuerligt
+						spektrum).
+
+						<br><br>
+						- **Robotdammsugare**:
+						<b>Partially Observable (Delvis observerbar):</b> En robotdammsugare kan inte se hela sitt
+						operativa
+						område på en gång. Den kanske har sensorer för att detektera smuts, hinder och kanske även
+						kartlägga sitt område, men det finns alltid delar av miljön som den inte kan uppfatta direkt.
+						Detta skapar osäkerhet om miljöns totala tillstånd.
+						<br>
+						<b>Single Agent (Enkelagent):</b> Robotdammsugaren agerar som en ensam agent när den utför sitt
+						uppdrag
+						att städa. Även om det finns andra aktörer (människor, husdjur) i miljön, betraktas inte dessa
+						som aktiva agenter i dammsugarens uppgiftsmiljö i termer av problemlösningsstrategi.
+						<br>
+						<b>Stochastic (Stokastisk):</b> Även om robotdammsugaren kan ha viss förutsägbarhet i hur den
+						navigerar
+						och städar, kan osäkra händelser inträffa som påverkar dess prestanda. Till exempel kan objekt
+						flyttas, nya hinder kan uppstå, eller den kan påverkas av okänd smuts eller spill som den måste
+						hantera.
+						<br>
+						<b>Sequential (Sekventiell):</b> Besluten som robotdammsugaren tar bygger på en sekvens av
+						tidigare
+						handlingar och deras resultat. Varje beslut påverkar framtida beslut, vilket innebär att den
+						måste planera över tid och kan inte bara fatta isolerade beslut baserade på nuvarande
+						observationer.
+						<br>
+						<b>Dynamic (Dynamisk):</b> Miljön kan förändras medan robotdammsugaren överväger sina
+						handlingar. Om
+						den stannar för att planera eller ladda, kan smutsnivåerna öka, eller möbler kan ha flyttats,
+						vilket påverkar dess städningsplan.
+						<br>
+						<b>Continuous (Kontinuerlig):</b> Robotdammsugarens uppgiftsmiljö är kontinuerlig i den meningen
+						att
+						den navigerar i ett rum eller hus med kontinuerliga rymddimensioner, och den kan stöta på
+						varierande grad av smuts och hinder. Handlingar och uppfattningar är inte diskreta, utan
+						varierar längs ett kontinuum. Till exempel, när robotdammsugaren justerar sin riktning, gör den
+						det i små, smidiga rörelser snarare än i stora, hoppande steg.
+					</aside>
+					<table class="environment table">
+						<thead>
+							<tr>
+								<th>Task Environment</th>
+								<th>Observable</th>
+								<th>Agents</th>
+								<th>Deterministic</th>
+								<th>Episodic</th>
+								<th>Static</th>
+								<th>Discrete</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Taxi Driver</td>
+								<td>Partially</td>
+								<td>Multi</td>
+								<td>Stochastic</td>
+								<td>Sequential</td>
+								<td>Dynamic</td>
+								<td>Continuous</td>
+							</tr>
+							<tr>
+								<td>Chess Game</td>
+								<td>Fully</td>
+								<td>Multi</td>
+								<td>Deterministic</td>
+								<td>Episodic</td>
+								<td>Static</td>
+								<td>Discrete</td>
+							</tr>
+							<tr>
+								<td>Stock Trading</td>
+								<td>Partially</td>
+								<td>Multi</td>
+								<td>Stochastic</td>
+								<td>Sequential</td>
+								<td>Dynamic</td>
+								<td>Continuous</td>
+							</tr>
+							<tr>
+								<td>Thermostat Control</td>
+								<td>Fully</td>
+								<td>Single</td>
+								<td>Deterministic</td>
+								<td>Episodic</td>
+								<td>Static</td>
+								<td>Discrete</td>
+							</tr>
+							<tr>
+								<td>Robotic Vacuum Cleaner</td>
+								<td>Partially</td>
+								<td>Single</td>
+								<td>Stochastic</td>
+								<td>Sequential</td>
+								<td>Dynamic</td>
+								<td>Continuous</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</section>
+
+
+
+			</section>
+
+			<section data-background-color="white" data-background="images/bild4.png" data-background-opacity="0.2">
+				<section data-auto-animate>
+					<h2 data-id="types_of_agents_header">Types of Agents</h2>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="types_of_agents_header" style="opacity: 0.4;">Types of Agents</h2>
+					<ul style="font-size: 0.875em;">
+						<aside class="notes">
+							Inom artificiell intelligens finns det flera olika typer av agenter som var och en har sina
+							unika egenskaper och användningsområden. Låt oss gå igenom några av de mest vanliga:<br>
+
+							- <b>Simple Reflex Agent:</b><br>
+							Använder en uppsättning regler för att bestämma sina handlingar.<br>
+							Exempel: En termostat som reglerar temperaturen.<br><br>
+
+							- <b>Model-Based Reflex Agent:</b><br>
+							Har en intern modell av sin omgivning och kan anpassa sina handlingar därefter.<br>
+							Exempel: En robotdammsugare som lär sig utformningen av ett rum.<br><br>
+
+							- <b>Goal-Based Agent:</b><br>
+							Har tydliga mål och använder planering för att uppnå dem.<br>
+							Exempel: En schackbot som planerar flera drag framåt.<br><br>
+
+							- <b>Utility-Based Agent:</b><br>
+							Optimerar för att maximera en nyttighetsfunktion.<br>
+							Exempel: En aktiehandelsbot.<br><br>
+
+							<b>Goal-based</b> och <b>Utility-based</b> agenter kan framstå som liknande eftersom båda
+							typerna av agenter har en viss form av mål eller optimalt tillstånd som de strävar efter.
+							Skillnaden ligger i hur de värderar och beslutar om sina handlingar för att nå dessa mål
+							eller
+							tillstånd.<br>
+
+							<b>Goal-Based Agent:</b><br>
+
+							<b>Mål:</b> Har tydligt definierade mål som den strävar efter att uppnå. Dessa mål är ofta
+							binära; antingen uppfyllda eller ej.<br>
+							<b>Planering:</b> Använder planering och sökning för att hitta en sekvens av handlingar som
+							för
+							den från sitt nuvarande tillstånd till ett måltillstånd.<br>
+							<b>Exempel:</b> En schackbot som har målet att sätta schackmatt motståndaren. Det använder
+							planering för att hitta en serie drag som leder till detta mål.<br><br>
+							<b>Utility-Based Agent:</b><br>
+
+							<b>Nyttighetsfunktion:</b> Använder en matematisk funktion för att kvantifiera hur "bra"
+							olika
+							tillstånd eller handlingar är, snarare än att bara sträva efter att uppnå ett specifikt
+							mål.<br>
+							<b>Optimering:</b> Försöker maximera denna nyttighetsfunktion, vilket kan inkludera
+							avvägningar
+							mellan olika mål och resursbegränsningar.<br>
+							<b>Exempel:</b> En aktiehandelsbot som inte bara strävar efter att tjäna pengar (ett tydligt
+							mål) utan som tar hänsyn till risk, volatilitet och andra faktorer för att maximera den
+							totala
+							nyttigheten.<br><br>
+							Så medan en <b>goal-based agent</b> ser världen i svart och vitt (mål uppnått eller inte),
+							tar
+							en <b>utility-based agent</b> hänsyn till olika nyanser och komplexiteter genom att
+							kvantifiera
+							dem i sin nyttighetsfunktion. Denna kvantifiering gör att utility-based agenter kan göra mer
+							sofistikerade avvägningar mellan olika handlingar och mål.<br><br>
+
+							<b>Learning Agent:</b><br>
+							Kan lära sig av erfarenheter och förbättra sin prestanda över tid.<br>
+							Exempel: En självkörande bil som blir säkrare med mer data.<br><br>
+							Denna översikt hjälper oss att förstå den underliggande teorin bakom olika typer av
+							intelligenta
+							agenter.
+
+						</aside>
+						<li class="fragment"><b>Simple Reflex Agent:</b> Operates based on a set of rules and immediate
+							sensory input</li>
+						<li class="fragment"><b>Model-Based Reflex Agent:</b> Keeps track of parts of the world state to
+							make informed decisions</li>
+						<li class="fragment"><b>Goal-Based Agent:</b> Has objectives and plans actions to achieve them
+						</li>
+						<li class="fragment"><b>Utility-Based Agent:</b> Optimizes actions based on a utility function
+							to achieve the best outcome</li>
+						<li class="fragment"><b>Learning Agent:</b> Improves performance by learning from experiences
+							and adapting over time</li>
+					</ul>
+				</section>
+
+
+			</section>
+
+
+			<!-- Slide for Atomic, Factored, and Structured Representation -->
+			<section data-background-color="white" data-background="images/bild5.png" data-background-opacity="0.2">
+
+
+				<section data-auto-animate>
+					<h2 data-id="rep_header">Representation Types</h2>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="rep_header" style="opacity: 0.4;">Representation Types</h2>
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+
+					<p><b>Atomic Representation:</b> States are indivisible wholes.</p>
+					<div class="r-hstack justify-center"><img data-id="box1" src="images/atomic.svg" width="400"></div>
+
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<p><b>Factored Representation:</b> States are divided into variables.</p>
+					<div class="r-hstack justify-center"><img data-id="box1" src="images/factored.svg" width="400">
+					</div>
+
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<p><b>Structured Representation:</b> States have object-oriented or relational structure.</p>
+					<div class="r-hstack justify-center"><img data-id="box1" src="images/structured.svg" width="400">
+					</div>
+
+				</section>
+				<section data-auto-animate>
+					<h3>Examples</h3>
+
+					<aside class="notes">
+						I den här delen diskuterar vi olika sätt att representera tillstånd i AI-problem. Det finns tre
+						huvudtyper av representationer:
+						<br><br>
+						- <strong>Atomisk representation:</strong> Här är varje tillstånd en odelbar helhet. Ett bra
+						exempel är pathfinding där varje stad är en nod i en graf. Här har vi inte så mycket att "bryta
+						ner"; varje stad, eller nod, är ett unikt tillstånd.
+						<br>
+						- <strong>Faktorerad representation:</strong> I detta fall bryts varje tillstånd ner i en
+						uppsättning variabler. Sudoku är ett bra exempel här. Istället för att se varje brädläge som ett
+						unikt tillstånd, ser vi det som en uppsättning variabler (celler, rader, kolumner) som
+						tillsammans definierar tillståndet.
+						<br>
+						- <strong>Strukturerad representation:</strong> Detta är en mer komplex form där tillstånd kan
+						ha en objektorienterad eller relationell struktur. Schack kan vara ett exempel här. Det är inte
+						bara positionerna av pjäserna som är viktiga, utan också deras inbördes relationer, hot, skydd
+						etc.
+						<br><br>
+						Dessa olika representationer är inte strikta kategorier utan mer som riktlinjer. Valet av
+						representation kan starkt påverka vilka algoritmer och metoder som är mest effektiva för att
+						lösa ett visst problem.
+					</aside>
+					<table class="peas table">
+						<thead>
+							<tr>
+								<th>Type</th>
+								<th>Example</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Atomic</td>
+								<td>Pathfinding (Each city as a node)</td>
+								<td>Each state is an indivisible unit, representing a city.</td>
+							</tr>
+							<tr>
+								<td>Factored</td>
+								<td>Sudoku</td>
+								<td>Each state is represented by variables for cells, rows, and columns.</td>
+							</tr>
+							<tr>
+								<td>Structured</td>
+								<td>Chess</td>
+								<td>States include the positions and types of pieces, among other variables.</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</section>
+			</section>
+
+			<section data-background-color="white" data-background="images/bild6.png" data-background-opacity="0.2">
+				<h2 data-id="ethics_safety_header" style="opacity: 0.4;">Ethics and Safety</h2>
+				<h3>Ethical and Safety Considerations in AI</h3>
+
+				<ul style="font-size: 0.75em;">
+					<li class="fragment"><b>Responsibility:</b> AI systems must be developed with accountability for
+						decisions and outcomes.</li>
+					<li class="fragment"><b>Transparency:</b> AI algorithms should be transparent, with the ability to
+						explain decisions and processes.</li>
+					<li class="fragment"><b>Privacy:</b> Safeguarding personal data and ensuring privacy is upheld in AI
+						operations.</li>
+					<li class="fragment"><b>Non-discrimination:</b> AI must be free of biases that can lead to
+						discrimination against any group or individual.</li>
+					<li class="fragment"><b>Safety:</b> AI should be designed to operate safely, minimizing risks to
+						humans and the environment.</li>
+					<li class="fragment"><b>Human Impact:</b> Consideration of the impact on employment, social
+						interactions, and human behavior.</li>
+				</ul>
+
+			</section>
+
+
+
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script src="plugin/zoom/zoom.js"></script>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealZoom, RevealMarkdown, RevealHighlight, RevealNotes],
+
+		});
+		Reveal.configure({ progress: false });
+		Reveal.configure({ pdfSeparateFragments: false });
+
+	</script>
+
+</body>
+
 </html>
